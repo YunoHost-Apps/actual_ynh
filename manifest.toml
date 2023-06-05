@@ -1,0 +1,61 @@
+packaging_format = 2
+
+id = "actual"
+name = "Actual"
+description.en = "Local-first personal finance tool"
+description.fr = "Premier outil de finances personnelles local"
+
+version = "23.6.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MIT"
+admindoc = "https://actualbudget.github.io/docs/"
+code = "https://github.com/actualbudget/actual"
+
+[integration]
+yunohost = ">= 11.1.19"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v23.6.0.tar.gz"
+        sha256 = "729311ef5f5c6a68f2ccc7a471d7234b38df8cff10b5e9c1625ea316c83ccbe2"
+        autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+    subdirs = ["user-files", "server-files"]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+    main.default = 5006
+
+    [resources.apt]
+    packages = "sqlite3"
+    extras.yarn.repo = "deb https://dl.yarnpkg.com/debian/ stable main"
+    extras.yarn.key = "https://dl.yarnpkg.com/debian/pubkey.gpg"
+    extras.yarn.packages = "yarn"
