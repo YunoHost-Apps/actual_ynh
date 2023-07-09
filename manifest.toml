@@ -5,7 +5,7 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "23.7.0~ynh1"
+version = "23.7.2~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -15,7 +15,7 @@ admindoc = "https://actualbudget.github.io/docs/"
 code = "https://github.com/actualbudget/actual-server"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.21"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -37,8 +37,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v23.7.0.tar.gz"
-        sha256 = "184c2163ab66ae353a0685d47587dd5a3e798c3f5c4ae0527cffdaaad1211d14"
+        url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v23.7.2.tar.gz"
+        sha256 = "6492d63f773469b9933a4b5923ca91e000a3df7b5d9bc718fed84da8ea2a6a97"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
