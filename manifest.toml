@@ -5,7 +5,7 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "23.7.2~ynh1"
+version = "23.7.2~ynh2"
 
 maintainers = ["eric_G"]
 
