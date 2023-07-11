@@ -55,6 +55,16 @@ ynh_add_systemd_config
 yunohost service add $app --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
 
 #=================================================
+# INSTALL ACTUAL
+#=================================================
+ynh_script_progression --message="Installing $app..." --weight=10
+
+pushd $install_dir
+ 	ynh_use_nodejs
+	ynh_exec_warn_less sudo -u $app env $ynh_node_load_PATH yarn install
+popd
+
+#=================================================
 # RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
 #=================================================
 # UPDATE A CONFIG FILE
