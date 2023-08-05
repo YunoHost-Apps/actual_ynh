@@ -5,7 +5,7 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "23.7.2~ynh2"
+version = "23.8.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -15,13 +15,13 @@ admindoc = "https://actualbudget.github.io/docs/"
 code = "https://github.com/actualbudget/actual-server"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
 sso = false
 disk = "50M"
-ram.build = "50M"
+ram.build = "850M"
 ram.runtime = "50M"
 
 [install]
@@ -37,8 +37,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v23.7.2.tar.gz"
-        sha256 = "6492d63f773469b9933a4b5923ca91e000a3df7b5d9bc718fed84da8ea2a6a97"
+        url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v23.8.0.tar.gz"
+        sha256 = "088449e0cd4a4d32e45c44356b21d62c3f4c925088b26d74cfc0b5be3d2aff5e"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -46,7 +46,7 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
-    subdirs = ["user-files", "server-files"]
+    subdirs = ["data/user-files", "data/server-files"]
 
     [resources.permissions]
     main.url = "/"
