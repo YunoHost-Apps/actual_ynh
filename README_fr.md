@@ -18,7 +18,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 Actual est un outil de finances personnelles local. Il est 100% gratuit et open-source, écrit en NodeJS, il dispose d'un élément de synchronisation afin que toutes vos modifications puissent se déplacer entre les appareils sans aucune lourde charge.
 
-**Version incluse :** 23.8.0~ynh1
+**Version incluse :** 23.8.1~ynh1
 
 ## Captures d’écran
 
