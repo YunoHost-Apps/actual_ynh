@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Actual
+# YunoHost 上的 Actual
 
 [![集成程度](https://dash.yunohost.org/integration/actual.svg)](https://dash.yunohost.org/appci/app/actual) ![工作状态](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
 
