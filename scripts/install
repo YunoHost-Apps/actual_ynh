@@ -29,7 +29,7 @@ then
     source_id_to_use="edge"
 fi
 
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use"
 
 chown -R $app:www-data "$install_dir"
 
