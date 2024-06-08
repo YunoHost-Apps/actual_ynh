@@ -57,7 +57,7 @@ ram.runtime = "50M"
         autoupdate.strategy = "latest_github_tag"
         [resources.sources.edge]
         url = "https://github.com/actualbudget/actual/archive/ebb9452b8ffcb732b4ce32b99c1c7455c639e71d.tar.gz"
-        sha256 = "8e5ccabdbd658eeb0c06cdf01a19a474659efe466bbdea3d17c008aa36a1cb07"
+        sha256 = "53d9cd1d1519c9d93800687624d628163e1d174845f0bdf0a0a44d51900492c1"
         autoupdate.upstream = "https://github.com/actualbudget/actual"
         autoupdate.strategy = "latest_github_commit"
 
