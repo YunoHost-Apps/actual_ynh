@@ -28,8 +28,13 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
+	source_id_to_use="main"
+	if [[ "$release_cycle" == "edge" ]]
+	then
+	    source_id_to_use="edge"
+	fi
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir" --keep="config.json"
+	ynh_setup_source --dest_dir="$install_dir" --keep="config.json" --source_id="$source_id_to_use"
 fi
 
 chown -R $app:www-data "$install_dir"
