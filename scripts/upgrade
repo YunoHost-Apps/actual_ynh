@@ -45,8 +45,6 @@ pushd $install_dir
 popd
 
 #=================================================
-# RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
-#=================================================
 # UPDATE A CONFIG FILE
 #=================================================
 # ynh_script_progression "Updating configuration..."
