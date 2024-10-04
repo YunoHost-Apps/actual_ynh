@@ -18,7 +18,7 @@
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**分发版本：** 24.9.0~ynh1
+**分发版本：** 24.10.0~ynh1
 
 ## 截图
 
