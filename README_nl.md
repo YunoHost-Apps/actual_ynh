@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Actual voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/actual)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Actual met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 
@@ -18,7 +20,7 @@ Hij mag NIET handmatig aangepast worden.
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**Geleverde versie:** 24.11.0~ynh1
+**Geleverde versie:** 24.12.0~ynh1
 
 ## Schermafdrukken
 

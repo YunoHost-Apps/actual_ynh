@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Actual untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Status kerja](https://apps.yunohost.org/badge/state/actual)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Pasang Actual dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 
@@ -18,7 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**Versi terkirim:** 24.11.0~ynh1
+**Versi terkirim:** 24.12.0~ynh1
 
 ## Tangkapan Layar
 
