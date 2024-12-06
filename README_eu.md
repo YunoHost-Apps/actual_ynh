@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Actual YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/actual)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Instalatu Actual YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 
@@ -18,7 +20,7 @@ EZ editatu eskuz.
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**Paketatutako bertsioa:** 24.11.0~ynh1
+**Paketatutako bertsioa:** 24.12.0~ynh1
 
 ## Pantaila-argazkiak
 

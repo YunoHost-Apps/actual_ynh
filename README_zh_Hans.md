@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Actual
 
-[![集成程度](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![工作状态](https://apps.yunohost.org/badge/state/actual)
+![维护状态](https://apps.yunohost.org/badge/maintained/actual)
 
 [![使用 YunoHost 安装 Actual](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 
@@ -18,7 +20,7 @@
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**分发版本：** 24.11.0~ynh1
+**分发版本：** 24.12.0~ynh1
 
 ## 截图
 
