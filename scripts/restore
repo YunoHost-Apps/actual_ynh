@@ -19,8 +19,6 @@ ynh_script_progression "Restoring the config path..."
 
 ynh_restore "$data_dir"
 
-chown -R $app:www-data "$data_dir"
-
 #=================================================
 # REINSTALL DEPENDENCIES
 #=================================================
