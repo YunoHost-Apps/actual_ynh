@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Actual YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/actual)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Instalatu Actual YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 

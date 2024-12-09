@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Actual para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Estado funcional](https://apps.yunohost.org/badge/state/actual)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Instalar Actual con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 

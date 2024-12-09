@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Actual
 
-[![集成程度](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![工作状态](https://apps.yunohost.org/badge/state/actual)
+![维护状态](https://apps.yunohost.org/badge/maintained/actual)
 
 [![使用 YunoHost 安装 Actual](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 

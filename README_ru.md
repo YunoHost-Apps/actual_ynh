@@ -5,7 +5,9 @@
 
 # Actual для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/actual.svg)](https://ci-apps.yunohost.org/ci/apps/actual/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/actual.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/actual.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/actual)](https://ci-apps.yunohost.org/ci/apps/actual/)
+![Состояние работы](https://apps.yunohost.org/badge/state/actual)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/actual)
 
 [![Установите Actual с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=actual)
 
