@@ -33,7 +33,7 @@ yunohost service add $app --description="Local-first personal finance tool" --lo
 #=================================================
 ynh_script_progression "Adding $app's configuration..."
 
-ynh_config_add --template="config.json" --destination="$install_dir/config.json"
+ynh_config_add --template="config.json" --destination="$data_dir/data/config.json"
 
 #=================================================
 # INSTALL THE LOUNGE
