@@ -45,13 +45,6 @@ pushd $install_dir
 popd
 
 #=================================================
-# UPDATE A CONFIG FILE
-#=================================================
-# ynh_script_progression "Updating configuration..."
-
-# ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
-
-#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
