@@ -29,13 +29,6 @@ ynh_config_add_systemd
 yunohost service add $app --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
 
 #=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression "Adding $app's configuration..."
-
-ynh_config_add --template="config.json" --destination="$data_dir/data/config.json"
-
-#=================================================
 # INSTALL THE LOUNGE
 #=================================================
 ynh_script_progression "Installing $app..."
