@@ -55,7 +55,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
-    main.default = 5006
 
     [resources.apt]
     packages = "sqlite3"
