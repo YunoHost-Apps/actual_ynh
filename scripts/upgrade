@@ -15,7 +15,7 @@ ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --keep="config.json"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
 
 #=================================================
 # UPGRADE DEPENDENCIES
@@ -36,6 +36,13 @@ ynh_config_add_systemd
 yunohost service add $app --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
 
 #=================================================
+# APP INITIAL CONFIGURATION
+#=================================================
+ynh_script_progression "Adding $app's configuration files..."
+
+ynh_config_add --template=".env" --destination="$install_dir/.env"
+
+#=================================================
 # INSTALL ACTUAL
 #=================================================
 ynh_script_progression "Installing $app..."
@@ -43,13 +50,6 @@ ynh_script_progression "Installing $app..."
 pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app yarn install
 popd
-
-#=================================================
-# UPDATE A CONFIG FILE
-#=================================================
-# ynh_script_progression "Updating configuration..."
-
-# ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
 
 #=================================================
 # START SYSTEMD SERVICE
