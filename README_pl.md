@@ -20,7 +20,7 @@ Nie powinno być ono edytowane ręcznie.
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**Dostarczona wersja:** 24.12.0~ynh2
+**Dostarczona wersja:** 25.1.0~ynh1
 
 ## Zrzuty ekranu
 
