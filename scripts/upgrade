@@ -48,6 +48,7 @@ ynh_config_add --template=".env" --destination="$install_dir/.env"
 ynh_script_progression "Installing $app..."
 
 pushd $install_dir
+	mv package.json package.json.bkp
 	ynh_hide_warnings ynh_exec_as_app yarn install
 popd
 
