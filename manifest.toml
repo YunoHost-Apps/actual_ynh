@@ -13,6 +13,7 @@ maintainers = ["eric_G"]
 license = "MIT"
 admindoc = "https://actualbudget.github.io/docs/"
 code = "https://github.com/actualbudget/actual-server"
+fund = "https://opencollective.com/actual"
 
 [integration]
 yunohost = ">= 12.0.9"
