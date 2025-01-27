@@ -9,7 +9,7 @@ Group=__APP__
 Environment="PATH=__PATH_WITH_NODEJS__"
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=/usr/bin/yarn start
+ExecStart=__NODEJS_DIR__/node start
 Restart=on-failure
 RestartSec=5
 StartLimitInterval=60s
