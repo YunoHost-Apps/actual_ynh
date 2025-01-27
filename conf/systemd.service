@@ -1,5 +1,5 @@
 [Unit]
-Description=Actual
+Description=Actual: personal finance tool
 After=network.target
 
 [Service]
