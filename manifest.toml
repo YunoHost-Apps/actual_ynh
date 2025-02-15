@@ -7,7 +7,7 @@ description.fr = "Premier outil de finances personnelles local"
 
 version = "25.2.1~ynh1"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "MIT"
