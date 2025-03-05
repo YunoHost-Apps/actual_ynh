@@ -29,7 +29,7 @@ Actual is a local-first personal finance tool. It is 100% free and open-source, 
 ## Documentación e recursos
 
 - Documentación oficial para admin: <https://actualbudget.github.io/docs/>
-- Repositorio de orixe do código: <https://github.com/actualbudget/actual-server>
+- Repositorio de orixe do código: <https://github.com/actualbudget/actual>
 - Tenda YunoHost: <https://apps.yunohost.org/app/actual>
 - Informar dun problema: <https://github.com/YunoHost-Apps/actual_ynh/issues>
 

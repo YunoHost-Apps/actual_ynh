@@ -29,7 +29,7 @@ Actual is a local-first personal finance tool. It is 100% free and open-source, 
 ## Dokumentazioa eta baliabideak
 
 - Administratzaileen dokumentazio ofiziala: <https://actualbudget.github.io/docs/>
-- Jatorrizko aplikazioaren kode-gordailua: <https://github.com/actualbudget/actual-server>
+- Jatorrizko aplikazioaren kode-gordailua: <https://github.com/actualbudget/actual>
 - YunoHost Denda: <https://apps.yunohost.org/app/actual>
 - Eman errore baten berri: <https://github.com/YunoHost-Apps/actual_ynh/issues>
 

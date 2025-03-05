@@ -29,7 +29,7 @@ Actual is a local-first personal finance tool. It is 100% free and open-source, 
 ## Dokumentasi dan sumber daya
 
 - Dokumentasi admin resmi: <https://actualbudget.github.io/docs/>
-- Depot kode aplikasi hulu: <https://github.com/actualbudget/actual-server>
+- Depot kode aplikasi hulu: <https://github.com/actualbudget/actual>
 - Gudang YunoHost: <https://apps.yunohost.org/app/actual>
 - Laporkan bug: <https://github.com/YunoHost-Apps/actual_ynh/issues>
 
