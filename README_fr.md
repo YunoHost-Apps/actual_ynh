@@ -20,7 +20,7 @@ Il NE doit PAS être modifié à la main.
 
 Actual est un outil de finances personnelles local. Il est 100% gratuit et open-source, écrit en NodeJS, il dispose d'un élément de synchronisation afin que toutes vos modifications puissent se déplacer entre les appareils sans aucune lourde charge.
 
-**Version incluse :** 25.2.1~ynh1
+**Version incluse :** 25.3.1~ynh1
 
 ## Captures d’écran
 
@@ -29,7 +29,7 @@ Actual est un outil de finances personnelles local. Il est 100% gratuit et open-
 ## Documentations et ressources
 
 - Documentation officielle de l’admin : <https://actualbudget.github.io/docs/>
-- Dépôt de code officiel de l’app : <https://github.com/actualbudget/actual-server>
+- Dépôt de code officiel de l’app : <https://github.com/actualbudget/actual>
 - YunoHost Store : <https://apps.yunohost.org/app/actual>
 - Signaler un bug : <https://github.com/YunoHost-Apps/actual_ynh/issues>
 

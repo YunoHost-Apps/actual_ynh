@@ -20,7 +20,7 @@ Hij mag NIET handmatig aangepast worden.
 
 Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting.
 
-**Geleverde versie:** 25.2.1~ynh1
+**Geleverde versie:** 25.3.1~ynh1
 
 ## Schermafdrukken
 
@@ -29,7 +29,7 @@ Actual is a local-first personal finance tool. It is 100% free and open-source, 
 ## Documentatie en bronnen
 
 - Officiele beheerdersdocumentatie: <https://actualbudget.github.io/docs/>
-- Upstream app codedepot: <https://github.com/actualbudget/actual-server>
+- Upstream app codedepot: <https://github.com/actualbudget/actual>
 - YunoHost-store: <https://apps.yunohost.org/app/actual>
 - Meld een bug: <https://github.com/YunoHost-Apps/actual_ynh/issues>
 
