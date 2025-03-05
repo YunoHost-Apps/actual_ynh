@@ -53,7 +53,7 @@ yunohost service add $app --description="Local-first personal finance tool" --lo
 ynh_script_progression "Installing $app..."
 
 pushd $install_dir
-	ynh_hide_warnings ynh_exec_as_app yarn install
+	ynh_hide_warnings ynh_exec_as_app yarn workspaces focus @actual-app/sync-server --production
 popd
 
 #=================================================

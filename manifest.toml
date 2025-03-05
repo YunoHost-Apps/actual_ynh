@@ -5,14 +5,14 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "25.2.1~ynh1"
+version = "25.3.1~ynh1"
 
 maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
 admindoc = "https://actualbudget.github.io/docs/"
-code = "https://github.com/actualbudget/actual-server"
+code = "https://github.com/actualbudget/actual"
 fund = "https://opencollective.com/actual"
 
 [integration]
@@ -42,8 +42,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/actualbudget/actual-server/archive/refs/tags/v25.2.1.tar.gz"
-    sha256 = "50d247478f510b4cbe70f80c19d11f06e42a2f265dea8bb396880f3c0f938d23"
+    url = "https://github.com/actualbudget/actual/archive/refs/tags/v25.3.1.tar.gz"
+    sha256 = "5653ef6d5ef70fbff5a1fa10638450885c60e4937f6930122895bfb4ef36892d"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
