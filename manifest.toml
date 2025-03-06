@@ -7,7 +7,7 @@ description.fr = "Premier outil de finances personnelles local"
 
 version = "25.3.1~ynh1"
 
-maintainers = []
+maintainers = ["Quiwy"]
 
 [upstream]
 license = "MIT"
