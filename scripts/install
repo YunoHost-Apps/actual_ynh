@@ -12,19 +12,20 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 #=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression "Installing dependencies..."
-
-ynh_nodejs_install
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
+
+#=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing dependencies..."
+
+ynh_nodejs_install
+ynh_hide_warnings corepack enable && corepack prepare yarn@latest --activate
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -43,7 +44,10 @@ ynh_config_add_nginx
 
 # Create a dedicated systemd config
 ynh_config_add_systemd
-yunohost service add $app --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
+
+# Use logrotate to manage application logfile(s)
+ynh_config_add_logrotate
 
 #=================================================
 # INSTALL THE LOUNGE
@@ -60,7 +64,7 @@ popd
 ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemctl --service="$app" --action="start" --log_path="systemd"
+ynh_systemctl --service="$app" --action="start" --wait_until="Listening on" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
