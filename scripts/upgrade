@@ -12,7 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Stopping $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
+ynh_systemctl --service="$app" --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -28,24 +28,26 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
 ynh_script_progression "Upgrading dependencies..."
 
 ynh_nodejs_install
+ynh_hide_warnings corepack enable && corepack prepare yarn@latest --activate
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-#ynh_script_progression "Updating $app's configuration files..."
+ynh_script_progression "Updating $app's configuration files..."
 
-#ynh_config_add --template=".env" --destination="$install_dir/.env"
+ynh_config_add --template=".env" --destination="$install_dir/.env"
 
 #=================================================
-# REAPPLY SYSTEM CONFIGURATIONS
+# REAPPLY SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
 
 ynh_config_add_systemd
+yunohost service add "$app" --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
 
-yunohost service add $app --description="Local-first personal finance tool" --log="/var/log/$app/$app.log"
+ynh_config_add_logrotate
 
 #=================================================
 # INSTALL ACTUAL
@@ -61,7 +63,7 @@ popd
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="systemd"
+ynh_systemctl --service="$app" --action="start" --wait_until="Listening on" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT

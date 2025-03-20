@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "actual"
@@ -7,12 +9,13 @@ description.fr = "Premier outil de finances personnelles local"
 
 version = "25.3.1~ynh1"
 
-maintainers = []
+maintainers = ["Quiwy"]
 
 [upstream]
 license = "MIT"
 admindoc = "https://actualbudget.github.io/docs/"
 code = "https://github.com/actualbudget/actual"
+
 fund = "https://opencollective.com/actual"
 
 [integration]
@@ -59,7 +62,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "sqlite3"
-    extras.yarn.repo = "deb https://dl.yarnpkg.com/debian/ stable main"
-    extras.yarn.key = "https://dl.yarnpkg.com/debian/pubkey.gpg"
-    extras.yarn.packages = "yarn"
+    packages = "sqlite3, openssl"
