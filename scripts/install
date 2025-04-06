@@ -55,6 +55,8 @@ ynh_config_add_logrotate
 ynh_script_progression "Installing $app..."
 
 pushd $install_dir
+	ynh_hide_warnings ynh_exec_as_app yarn install
+	ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=3000" yarn build:browser
 	ynh_hide_warnings ynh_exec_as_app yarn workspaces focus @actual-app/sync-server --production
 popd
 
