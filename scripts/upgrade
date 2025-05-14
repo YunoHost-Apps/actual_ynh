@@ -54,7 +54,7 @@ ynh_config_add_logrotate
 ynh_script_progression "Installing $app..."
 
 pushd $install_dir
-	ynh_hide_warnings npm install --location=global @actual-app/sync-server
+	ynh_hide_warnings npm install @actual-app/sync-server@$(ynh_app_upstream_version)
 popd
 
 #=================================================

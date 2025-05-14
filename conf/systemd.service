@@ -9,7 +9,7 @@ Group=__APP__
 Environment="PATH=__PATH_WITH_NODEJS__"
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__NODEJS_DIR__/actual-server
+ExecStart=__NODEJS_DIR__/npx @actual-app/sync-server
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
