@@ -53,6 +53,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Installing $app..."
 
+mkdir -p $install_dir/app
 pushd $install_dir/app
 	ynh_hide_warnings npm install @actual-app/sync-server@$(ynh_app_upstream_version)
 popd
