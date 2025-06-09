@@ -43,6 +43,14 @@ ynh_config_add_logrotate
 #=================================================
 # INSTALL ACTUAL
 #=================================================
+if ynh_app_upgrading_from_version_before 25.6.1~ynh1; then
+        ynh_script_progression "Moving env file..."
+       cp $install_dir/.env $data_dir/.env
+       ynh_safe_rm $install_dir
+       mkdir -p $install_dir
+       cp $data_dir/.env $install_dir/.env
+fi
+
 ynh_script_progression "Installing $app..."
 
 mkdir -p $install_dir
