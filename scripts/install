@@ -8,15 +8,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-ynh_script_progression "Setting up source files..."
-
-# Download, check integrity, uncompress and patch the source from manifest.toml
-source_dir="$install_dir/source"
-ynh_setup_source --dest_dir="$source_dir"
-
-#=================================================
 # INSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression "Installing dependencies..."
@@ -50,8 +41,8 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Installing $app..."
 
-mkdir -p $install_dir/app
-pushd $install_dir/app
+mkdir -p $install_dir
+pushd $install_dir
 	ynh_hide_warnings npm install @actual-app/sync-server@$(ynh_app_upstream_version)
 popd
 
