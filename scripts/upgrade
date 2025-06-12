@@ -15,27 +15,11 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --service="$app" --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-ynh_script_progression "Upgrading source files..."
-
-# Download, check integrity, uncompress and patch the source from manifest.toml
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
-
-#=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
 ynh_script_progression "Upgrading dependencies..."
 
 ynh_nodejs_install
-ynh_hide_warnings corepack enable && corepack prepare yarn@latest --activate
-
-#=================================================
-# UPDATE A CONFIG FILE
-#=================================================
-ynh_script_progression "Updating $app's configuration files..."
-
-ynh_config_add --template=".env" --destination="$install_dir/.env"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
@@ -52,13 +36,23 @@ ynh_config_add_logrotate
 #=================================================
 # INSTALL ACTUAL
 #=================================================
+if ynh_app_upgrading_from_version_before 25.6.1~ynh1; then
+       ynh_safe_rm $install_dir
+fi
+
 ynh_script_progression "Installing $app..."
 
+mkdir -p $install_dir
 pushd $install_dir
-	ynh_hide_warnings ynh_exec_as_app yarn install
-	ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=3000" yarn build:browser
-	ynh_hide_warnings ynh_exec_as_app yarn workspaces focus @actual-app/sync-server --production
+	ynh_hide_warnings npm install @actual-app/sync-server@$(ynh_app_upstream_version)
 popd
+
+#=================================================
+# UPDATE A CONFIG FILE
+#=================================================
+ynh_script_progression "Updating $app's configuration files..."
+
+ynh_config_add --template=".env" --destination="$install_dir/.env"
 
 #=================================================
 # START SYSTEMD SERVICE
