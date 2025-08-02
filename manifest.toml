@@ -7,7 +7,7 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "25.7.1~ynh1"
+version = "25.8.0~ynh1"
 
 maintainers = ["Quiwy"]
 
@@ -44,8 +44,8 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/actualbudget/actual/archive/refs/tags/v25.7.1.tar.gz"
-    sha256 = "e944a7b93cff01d39156bec5af6f3144283b7a45e65e34c9d6059edd6d95075b"
+    url = "https://github.com/actualbudget/actual/archive/refs/tags/v25.8.0.tar.gz"
+    sha256 = "8a40e40a275209b1126caae157da88139b165d4f51f36a3933712d7001fc7e65"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
