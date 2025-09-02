@@ -18,7 +18,7 @@ code = "https://github.com/actualbudget/actual"
 fund = "https://opencollective.com/actual"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -62,3 +62,6 @@ ram.runtime = "150M"
 
     [resources.apt]
     packages = "sqlite3, openssl"
+
+    [resources.nodejs]
+    version = "22"
