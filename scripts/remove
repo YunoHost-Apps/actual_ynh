@@ -4,7 +4,6 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -21,8 +20,6 @@ fi
 ynh_config_remove_systemd
 
 ynh_config_remove_nginx
-
-#REMOVEME? ynh_nodejs_remove
 
 #=================================================
 # END OF SCRIPT
