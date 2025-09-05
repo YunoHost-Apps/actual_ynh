@@ -7,7 +7,7 @@ name = "Actual"
 description.en = "Local-first personal finance tool"
 description.fr = "Premier outil de finances personnelles local"
 
-version = "25.8.0~ynh1"
+version = "25.9.0~ynh1"
 
 maintainers = ["Quiwy"]
 
@@ -18,7 +18,7 @@ code = "https://github.com/actualbudget/actual"
 fund = "https://opencollective.com/actual"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -44,8 +44,8 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/actualbudget/actual/archive/refs/tags/v25.8.0.tar.gz"
-    sha256 = "8a40e40a275209b1126caae157da88139b165d4f51f36a3933712d7001fc7e65"
+    url = "https://github.com/actualbudget/actual/archive/refs/tags/v25.9.0.tar.gz"
+    sha256 = "eaab592fe848470919b415b83ba3be75d1d9982cdb5dbf1b1e3f8645814e095d"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -62,3 +62,6 @@ ram.runtime = "150M"
 
     [resources.apt]
     packages = "sqlite3, openssl"
+
+    [resources.nodejs]
+    version = "22"
