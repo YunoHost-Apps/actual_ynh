@@ -1,4 +1,3 @@
-## FAQ
 ### Réinitialiser le mot de passe
 Si vous avez perdu le mot de passe de actual, on peut changer le mot de passe sans perdre les données. La fonction de réinitialisation est disponible depuis la version 23.4.2.
 

@@ -1,4 +1,3 @@
-## FAQ
 ### Reset Actual Password
 If you have forgotten your actual-server login password - not all is lost, as the password can be reset without losing any of your files / data. A password reset feature is available from version 23.4.2.
 
